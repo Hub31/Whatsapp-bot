@@ -1,7 +1,6 @@
 import express from "express";
 import axios from "axios";
 import dotenv from "dotenv";
-import Evolution from "evolution-api";
 
 dotenv.config();
 const app = express();
@@ -57,3 +56,4 @@ client.initialize();
 // 5. Start Express server (needed for Render)
 app.get("/", (req, res) => res.send("WhatsApp Bot is running!"));
 app.listen(10000, () => console.log("🚀 Server started on port 10000"));
+
